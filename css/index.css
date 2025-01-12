@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.tabs {
+    margin-left: 463px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 543px;
+}
+
+.tab-button {
+    border: 1px solid #007BFF;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #007BFF;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1;
+    text-align: center;
+}
+
+.tab-button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+.tab-button:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #007BFF;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    display: none;
+    min-height: 400px;
+}
+
+.tab.active {
+    display: block;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: -10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-left: 200px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start {
+    margin-top: 15px;
+}
+
+.start1 {
+    margin-top: 180px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: translateY(1px);
+}
