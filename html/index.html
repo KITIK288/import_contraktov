@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Импорт контактов</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <h1 class="main-title">Импорт контрактов</h1>
+    <div>
+      <div class="tabs">
+          <div class="tab-button active" onclick="showTab('tab1')">Импорт файла</div>
+          <div class="tab-button" onclick="showTab('tab2')">Импорт каталога</div>
+      </div>
+      <div id="tab1" class="tab active container">
+          <label for="program">Программа:</label><br>
+          <input type="text" id="program" name="program" list="programs"><br>
+          <datalist id="programs">
+              <option value="Программа 1">
+              <option value="Программа 2">
+              <option value="Программа 3">
+              <option value="Программа 4">
+          </datalist>
+          <label for="format">Формат:</label><br>
+          <input type="text" id="format" name="format" list="formats"><br><br>
+          <datalist id="formats">
+              <option value="Формат 1">
+              <option value="Формат 2">
+              <option value="Формат 3">
+              <option value="Формат 4">
+          </datalist>
+          <label for="fileInput">Выберите файл:</label>
+          <input type="file" id="fileInput"><br><br>
+          <button class="start" onclick="start()">Запуск</button>
+      </div>
+
+      <div id="tab2" class="tab container">
+        <button class="start1" onclick="start()">Запуск</button>
+      </div>
+    </div>
+  <script src="../js/index.js"></script>
+  </body>
+</html>
